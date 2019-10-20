@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Job Application</title>
+	</head>
+	
+	<body>
+		<form name="jobapplication" action="http://gclass.alexburner.com/formtest.php" method="post">
+			<center>
+			<h1>Job Application</h1>
+			<h2>Login Information</h2>
+			Username:
+			<input type="text" name="username"><br>
+			Password:
+			<input type="password" name="password">
+			
+			<h2>Contact Information</h2>
+			First Name:
+			<input type="text" name="firstname"><br>
+			
+			Middle Name:
+			<input type="text" name="middlename"><br>
+			
+			Last Name:
+			<input type="text" name="lastname"><br>
+			
+			<!-- new element: email -->
+			E-mail:
+			<input type="email" name="email"><br>
+			
+			<!-- new element: phone number -->
+			Phone Number:
+			<input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4} name="phone"><br>
+			<small>(Pattern: 123-456-7890)</small><br>
+			
+			Pronouns:
+			<select name="pronouns">
+				<option value="null"> </option>
+				<option value="she">she/her/hers</option>
+				<option value="he">he/him/his</option>
+				<option value="they">they/them/theirs</option>
+				<option value="other">other</option>
+			</select>
+				
+			<h2>Avaliability</h2>
+			<p>Are you applying to work:</p>
+			<input type="radio" name="parttimework">Part time?<br>
+			<input type="radio" name="fulltimework">Full time?
+			
+			<p>What work are you interested in doing? Check all that apply.</p>
+			<input type="checkbox" name="deskwork">Desk work<br>
+			<input type="checkbox" name="customerwork">Customer service<br>
+			<input type="checkbox" name="retailwork">Retail<br>
+			<input type="checkbox" name="foodwork">Food service
+			
+			<!-- new element: date -->
+			<p>What is the earliest date you can begin work?</p>
+			<input type="date" name="workstart">
+			
+			<h2>Personal Statements</h2>
+			<!-- new element: file upload -->
+			<p>Please upload a resume of your relevant experience and past job titles.</p>
+			<input type="file" name="resume">
+			
+			<p>Provide us a short personal essay about yourself and why you want a position here.</p>
+			<textarea name="personalessay">
+			
+			
+			</textarea>
+			
+			<p>If you have any questions or anything else you want us to know, please write it in the area below.</p>
+			<textarea name="other">
+			
+			
+			</textarea><br>
+			
+			<input type="submit" value="Submit Application">
+			</center>
+		</form>
+	</body> 
+</html>
